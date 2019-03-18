@@ -225,7 +225,7 @@ static jboolean disconnectChannelNative(JNIEnv* env, jobject object,
   return JNI_TRUE;
 }
 
-static JNINativeMethod sMethods[] = {
+static const JNINativeMethod sMethods[] = {
     {"classInitNative", "()V", (void*)classInitNative},
     {"initializeNative", "()V", (void*)initializeNative},
     {"cleanupNative", "()V", (void*)cleanupNative},
