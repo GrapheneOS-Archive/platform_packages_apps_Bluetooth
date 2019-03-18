@@ -2064,7 +2064,7 @@ static void gattTestNative(JNIEnv* env, jobject object, jint command,
  */
 
 // JNI functions defined in AdvertiseManager class.
-static JNINativeMethod sAdvertiseMethods[] = {
+static const JNINativeMethod sAdvertiseMethods[] = {
     {"classInitNative", "()V", (void*)advertiseClassInitNative},
     {"initializeNative", "()V", (void*)advertiseInitializeNative},
     {"cleanupNative", "()V", (void*)advertiseCleanupNative},
@@ -2091,7 +2091,7 @@ static JNINativeMethod sAdvertiseMethods[] = {
 };
 
 // JNI functions defined in PeriodicScanManager class.
-static JNINativeMethod sPeriodicScanMethods[] = {
+static const JNINativeMethod sPeriodicScanMethods[] = {
     {"classInitNative", "()V", (void*)periodicScanClassInitNative},
     {"initializeNative", "()V", (void*)periodicScanInitializeNative},
     {"cleanupNative", "()V", (void*)periodicScanCleanupNative},
@@ -2100,7 +2100,7 @@ static JNINativeMethod sPeriodicScanMethods[] = {
 };
 
 // JNI functions defined in ScanManager class.
-static JNINativeMethod sScanMethods[] = {
+static const JNINativeMethod sScanMethods[] = {
     {"registerScannerNative", "(JJ)V", (void*)registerScannerNative},
     {"unregisterScannerNative", "(I)V", (void*)unregisterScannerNative},
     {"gattClientScanNative", "(Z)V", (void*)gattClientScanNative},
@@ -2133,7 +2133,7 @@ static JNINativeMethod sScanMethods[] = {
 };
 
 // JNI functions defined in GattService class.
-static JNINativeMethod sMethods[] = {
+static const JNINativeMethod sMethods[] = {
     {"classInitNative", "()V", (void*)classInitNative},
     {"initializeNative", "()V", (void*)initializeNative},
     {"cleanupNative", "()V", (void*)cleanupNative},
