@@ -1217,7 +1217,7 @@ static void interopDatabaseAddNative(JNIEnv* env, jobject obj, int feature,
   env->ReleaseByteArrayElements(address, addr, 0);
 }
 
-static JNINativeMethod sMethods[] = {
+static const JNINativeMethod sMethods[] = {
     /* name, signature, funcPtr */
     {"classInitNative", "()V", (void*)classInitNative},
     {"initNative", "()Z", (void*)initNative},
