@@ -1237,7 +1237,7 @@ static jbyteArray obfuscateAddressNative(JNIEnv* env, jobject obj,
   return output_bytes;
 }
 
-static JNINativeMethod sMethods[] = {
+static const JNINativeMethod sMethods[] = {
     /* name, signature, funcPtr */
     {"classInitNative", "()V", (void*)classInitNative},
     {"initNative", "(ZZ)Z", (void*)initNative},

@@ -219,7 +219,7 @@ static void informAudioTrackGainNative(JNIEnv* env, jobject object,
   sBluetoothA2dpInterface->set_audio_track_gain((float)gain);
 }
 
-static JNINativeMethod sMethods[] = {
+static const JNINativeMethod sMethods[] = {
     {"classInitNative", "()V", (void*)classInitNative},
     {"initNative", "()V", (void*)initNative},
     {"cleanupNative", "()V", (void*)cleanupNative},
