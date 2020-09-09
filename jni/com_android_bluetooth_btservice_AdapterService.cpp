@@ -1308,7 +1308,7 @@ static int getMetricIdNative(JNIEnv* env, jobject obj, jbyteArray address) {
   return sBluetoothInterface->get_metric_id(addr_obj);
 }
 
-static JNINativeMethod sMethods[] = {
+static const JNINativeMethod sMethods[] = {
     /* name, signature, funcPtr */
     {"classInitNative", "()V", (void*)classInitNative},
     {"initNative", "(ZZIZ)Z", (void*)initNative},
