@@ -808,7 +808,7 @@ static void setVolume(int8_t volume) {
   sCallbackEnv->CallVoidMethod(mJavaInterface, method_setVolume, volume);
 }
 
-static JNINativeMethod sMethods[] = {
+static const JNINativeMethod sMethods[] = {
     {"classInitNative", "()V", (void*)classInitNative},
     {"initNative", "()V", (void*)initNative},
     {"sendMediaUpdateNative", "(ZZZ)V", (void*)sendMediaUpdateNative},
