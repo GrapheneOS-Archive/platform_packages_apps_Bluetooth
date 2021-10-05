@@ -249,7 +249,7 @@ static void setVolumeGroupNative(JNIEnv* env, jobject object, jint group_id,
   sVolumeControlInterface->SetVolume(group_id, volume);
 }
 
-static JNINativeMethod sMethods[] = {
+static const JNINativeMethod sMethods[] = {
     {"classInitNative", "()V", (void*)classInitNative},
     {"initNative", "()V", (void*)initNative},
     {"cleanupNative", "()V", (void*)cleanupNative},

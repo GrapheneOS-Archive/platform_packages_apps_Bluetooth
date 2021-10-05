@@ -253,7 +253,7 @@ static void groupStopNative(JNIEnv* env, jobject object, jint group_id) {
   sLeAudioClientInterface->GroupStop(group_id);
 }
 
-static JNINativeMethod sMethods[] = {
+static const JNINativeMethod sMethods[] = {
     {"classInitNative", "()V", (void*)classInitNative},
     {"initNative", "()V", (void*)initNative},
     {"cleanupNative", "()V", (void*)cleanupNative},
