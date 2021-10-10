@@ -900,7 +900,7 @@ static void setBipClientStatusNative(JNIEnv* env, jobject object,
   sServiceInterface->SetBipClientStatus(bdaddr, status);
 }
 
-static JNINativeMethod sMethods[] = {
+static const JNINativeMethod sMethods[] = {
     {"classInitNative", "()V", (void*)classInitNative},
     {"initNative", "()V", (void*)initNative},
     {"registerBipServerNative", "(I)V", (void*)registerBipServerNative},
